@@ -8,7 +8,7 @@
 
 }
 .nav-items{
-    padding: 0px 20px;
+    padding: 0px 10px;
 }
 .nav-items>ul{
     font-size: 20px;
@@ -17,16 +17,31 @@
 }
 
 .nav-items>ul>li{
-    padding:10px;
-    margin: 10px;
+    padding:5px;
+    margin: 5px;
 }
 
 .restocard{
     width: 200px;
-    height: 300px;
+    height: 400px;
+    padding:10px;
+    margin: 5px;
+}
+.restocard:hover{
     border: 1px solid black;
 }
 .search{
     padding: 10px;
     
+}
+.resto-logo{
+    height: 50%;
+    width: 100%;
+}
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.filter{
+    margin: 10px;
 }

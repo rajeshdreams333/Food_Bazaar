@@ -18,3 +18,12 @@
 - Tree shaking - Remove unused code also
 - Different dev and production bundles
 - 
+
+# Two types of import and export 
+
+ - Default export/import
+ -  export default Component;/import Component from "path"
+
+ - Named export/import
+ - export const name = 'John'; / import {name} from "path";
+
