@@ -30,10 +30,7 @@
 .restocard:hover{
     border: 1px solid black;
 }
-.search{
-    padding: 10px;
-    
-}
+
 .resto-logo{
     height: 50%;
     width: 100%;
@@ -42,6 +39,15 @@
     display: flex;
     flex-wrap: wrap;
 }
-.filter{
-    margin: 10px;
+.filter{ 
+    margin: 5px;
+    display: flex;
+}
+.login{
+    padding: 0 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.search{
+    padding: 5px;
 }
