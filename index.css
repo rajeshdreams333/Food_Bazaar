@@ -22,7 +22,7 @@
 }
 
 .restocard{
-    width: 200px;
+    width: 220px;
     height: 400px;
     padding:10px;
     margin: 5px;
@@ -50,4 +50,14 @@
 }
 .search{
     padding: 5px;
+}
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card{
+    margin:10px;
+    height:350px;
+    width: 230px;
+    background-color: rgb(217, 216, 216);
 }

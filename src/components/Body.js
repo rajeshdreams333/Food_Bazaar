@@ -1,5 +1,6 @@
 import RestoCard from "./Restocard";
 import { useEffect, useState } from "react";
+import Shimmer from "./Shimmer";
 const Body = () => {
   
   const [restoList, setRestoList] = useState([]);
@@ -11,9 +12,10 @@ const Body = () => {
     const data=await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.8089863&lng=83.3455422&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING")
     const json=await data.json()
     console.log(json);
-    setRestoList(json?.data?.cards[3]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    setRestoList(json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants||json?.data?.cards[5]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
   }
-  return (
+
+  return restoList.length===0 ?<Shimmer/>: (
     <div className="body">
       <div className="filter">
         <div className="search">
